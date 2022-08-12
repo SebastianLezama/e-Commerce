@@ -3,9 +3,9 @@
 <p align="center">
   Creamos un e-commerce con el fin de practicar distintas técnicas de React.js trayendo info sobre productos de una REST API, manejando las distintas funcionalidades de un e-commerce, hasta finalizar la compra haciendo el POST a la API.
   <br>
-  <a href="https://github.com/SebastianLezama/ReactJS/issues/new?template=bug.md">Report bug</a>
+  <a href="https://github.com/SebastianLezama/e-Commerce/issues/new?template=bug.md">Report bug</a>
   ·
-  <a href="https://github.com/SebastianLezama/ReactJS/issues/new?template=feature.md&labels=feature">Request feature</a>
+  <a href="https://github.com/SebastianLezama/e-Commerce/issues/new?template=feature.md&labels=feature">Request feature</a>
 </p>
 
 ## Para empezar
@@ -13,7 +13,7 @@
 - Copia el repositorio
 
 ```text
-git clone
+git clone git@github.com:SebastianLezama/e-Commerce.git
 ```
 
 - Instala las dependencias
@@ -60,7 +60,7 @@ src/
 
 ## Bugs y feature requests
 
-Si tienes algún bug o una feature request, por favor abre un nuevo [issue](https://github.com/SebastianLezama/ReactJS/issues/new).
+Si tienes algún bug o una feature request, por favor abre un nuevo [issue](https://github.com/SebastianLezama/e-Commerce/issues/new).
 
 ## React Router Dom
 
