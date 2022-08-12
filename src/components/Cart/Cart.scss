@@ -1,0 +1,510 @@
+.contact-form {
+  margin-top: 10px;
+  width: 23%;
+  max-width: 35%;
+
+  position: fixed;
+  right: 0;
+
+  li {
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative;
+    list-style: none;
+    margin: 0px 8px 5px 8px;
+  }
+
+  ul {
+    padding: 0;
+    display: inline-block;
+  }
+
+  input {
+    height: 22px;
+    width: 90%;
+  }
+
+  .flat-button {
+    color: #188fff;
+    height: 60px;
+    width: 90%;
+    font-size: 16px;
+    font-family: "PT Sans Caption", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #188fff;
+    border-radius: 3px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: #166dbe;
+      color: #222;
+    }
+  }
+}
+
+.cartDisplay {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+}
+
+.cartContainer {
+  padding: 20px;
+  margin: 40px 410px 90px 25px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+}
+
+.containerCartDetail {
+  display: flex;
+  background-color: rgba(196, 196, 196, 0.372);
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.cartTotalContainer {
+  width: 23%;
+  max-width: 35%;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    h6 {
+      margin: 3px;
+      text-align: left;
+    }
+  }
+
+  .subTotalContainer {
+    margin: 0;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: end;
+    right: 0;
+  }
+
+  .subTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    border: 0;
+    position: relative;
+
+    margin-left: 12px;
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 10px;
+  }
+}
+.infoCartDetail {
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.infoCartDetail img {
+  width: 20%;
+  min-width: 60px;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 20px;
+  max-width: 70px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.infoCartDetail article {
+  h3 {
+    margin: 0px 5px;
+  }
+
+  h4 {
+    margin: 0px 5px;
+  }
+  h5 {
+    margin: 0px 3px;
+    font-size: 0.85em;
+  }
+}
+
+.stock {
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  left: 35%;
+  width: 100%;
+  h3 {
+    margin: 0;
+  }
+  p {
+    font-size: 0.7em;
+  }
+}
+
+.stock h6 {
+  margin: 2px;
+  font-size: 0.8em;
+}
+
+.prodInfo {
+  display: flex;
+  align-items: center;
+  grid-column: span 2;
+}
+
+.nombre h3 {
+  display: flex;
+  font-size: 1.4em;
+  margin: 5px;
+}
+
+.subContainer {
+  margin: 0px 10px 0px 10px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    margin: 3px;
+  }
+}
+
+.subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  background-color: rgba(195, 195, 195, 0.895);
+  padding: 5px;
+  border-radius: 5px;
+
+  height: 45px;
+
+  h5 {
+    justify-content: end;
+  }
+}
+
+.botonera {
+  display: flex;
+  align-items: center;
+  left: 10px;
+  h4 {
+    padding: 3px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+
+.boton {
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #188fff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  z-index: 0;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.botonDelete {
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #166dbe;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: #188fff;
+  }
+}
+
+.vaciar {
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #707070;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: none;
+  margin-top: 195px;
+  width: 90%;
+  &:hover {
+    background-color: #166dbe;
+  }
+}
+
+.vaciar:focus {
+  background-color: #707070;
+}
+
+@media (max-width: 110em) {
+  .cartContainer {
+    margin: 40px 380px 90px 25px;
+  }
+}
+
+@media (max-width: 100em) {
+  .cartContainer {
+    margin: 40px 330px 90px 25px;
+  }
+}
+
+@media (max-width: 80em) {
+  .cartContainer {
+    margin: 40px 270px 90px 25px;
+  }
+  .cartTotalContainer,
+  .contact-form {
+    width: 300px;
+    max-width: 400px;
+  }
+  .nombre {
+    left: 11%;
+  }
+}
+
+@media (max-width: 70em) {
+  .subtotal {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cartDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 0px 0px;
+  }
+
+  .contact-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  .cartContainer {
+    margin: 20px 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 300px;
+    justify-content: center;
+    width: auto;
+  }
+
+  .cartTotalContainer {
+    padding-top: 53px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    max-width: 100%;
+  }
+
+  .vaciar {
+    margin: 20px 0px 0px 0px;
+  }
+  .infoCartDetail img {
+    max-width: 100px;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 50em) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 0px 0px;
+  }
+  .infoCartDetail {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .prodInfo {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .subContainer {
+    grid-row: span 2;
+  }
+
+  .subtotal {
+    width: 95%;
+  }
+
+  .botonDelete {
+    width: 60%;
+    justify-self: center;
+  }
+
+  .cartTotalContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      margin: auto;
+      h6 {
+        margin: 3px;
+        text-align: left;
+      }
+    }
+
+    .subTotalContainer {
+      margin: 0;
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+      justify-items: end;
+      right: 0;
+    }
+
+    .subTotal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      border: 0;
+      position: relative;
+
+      margin-left: 12px;
+      margin-right: 10px;
+    }
+
+    h2 {
+      font-size: 1.3em;
+    }
+
+    .total {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 12px;
+      margin-right: 10px;
+    }
+  }
+  .titulo {
+    margin: 0px 0px 5px 0px;
+  }
+
+  .contact-form {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .vaciar {
+    margin: 10px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    input {
+      width: 90%;
+    }
+
+    ul {
+      width: 100%;
+    }
+  }
+  @media (max-width: 32em) {
+    .infoCartDetail {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr;
+    }
+
+    .cartContainer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .subtotal {
+      width: 100%;
+    }
+
+    .botonDelete {
+      margin: 0;
+      margin-left: 10px;
+      grid-column: span 1;
+      margin-top: 5px;
+    }
+  }
+}

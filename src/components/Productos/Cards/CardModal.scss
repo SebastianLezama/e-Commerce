@@ -1,0 +1,112 @@
+.cardDetail {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 3;
+  left: 0;
+}
+
+.divModal {
+  width: 75%;
+  max-width: 960px;
+  min-width: 820px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background: #ffff;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.divModal h1 {
+  margin: 0;
+  margin-top: 2%;
+  font-size: 1.7em;
+  color: #166dbe;
+}
+.divModal h2 {
+  margin: 0;
+  margin-top: 2%;
+}
+
+.divModal h4:hover {
+  color: #166dbe;
+}
+
+.divModal p {
+  font-size: 30px;
+  margin: 0;
+  padding: 3px;
+}
+
+.infoModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdClose {
+  background: #141414;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+}
+
+.imgModal {
+  margin-right: 25px;
+}
+
+.divModal img {
+  width: 85%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (max-width: 55em) {
+  .divModal {
+    // display: flex;
+    // flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    font-size: 0.8em;
+
+    width: 70%;
+    min-width: 300px;
+    max-width: 400px;
+    h2 {
+      font-size: 1.1em;
+    }
+    p {
+      font-size: 1.8em;
+    }
+  }
+
+  .imgModal {
+    margin: 0;
+  }
+
+  .divModal img {
+    width: 60%;
+  }
+
+  .infoModal {
+    grid-row-start: 2;
+  }
+}

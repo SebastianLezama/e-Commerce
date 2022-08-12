@@ -1,0 +1,111 @@
+.checkoutContainer {
+  padding: 20px;
+  margin: 25px;
+  margin-top: 40px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+  align-items: center;
+  justify-content: center;
+
+  .checkout {
+    background-color: rgba(196, 196, 196, 0.372);
+    margin: 20px 0px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 50%;
+      min-width: 330px;
+      max-width: 600px;
+      padding: 5px 0px;
+
+      h5 {
+        margin: 0;
+      }
+    }
+  }
+  .flatButton {
+    color: #188fff;
+    height: 60px;
+    width: 50%;
+    max-width: 450px;
+    min-width: 330px;
+    font-size: 16px;
+    font-family: "PT Sans Caption", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 1px solid #188fff;
+    border-radius: 3px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: #166dbe;
+      color: #222;
+    }
+
+    h2 {
+      margin: 15px;
+    }
+  }
+
+  .copyButton {
+    font-size: 1.1em;
+    margin-left: 5px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: #166dbe;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: #188fff;
+    }
+  }
+}
+
+.codigoPedido {
+  width: 250px;
+}
+
+.checkoutItems {
+  margin: 20px 0px;
+  h3 {
+    margin: 3px;
+  }
+}
+
+.orderItems {
+  display: flex;
+  justify-content: space-between;
+  h6 {
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .checkoutContainer {
+    padding: 20px;
+    margin: 25px;
+    margin-top: 123px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+}

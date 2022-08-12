@@ -1,0 +1,399 @@
+.nav {
+  display: flex;
+  align-items: center;
+  clear: both;
+  left: 0;
+  right: 0;
+  position: relative;
+  top: 0;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 80px;
+  padding-top: 3px;
+  padding-left: 2px;
+  z-index: 1;
+}
+
+.bars {
+  display: none;
+}
+
+.nav h2 {
+  line-height: 25px;
+  color: #ffff;
+}
+
+.nav h2:hover {
+  color: #222222;
+}
+
+.cart {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 12px;
+}
+
+.cart span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.navCart:hover {
+  background-color: var(--primary);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.productos {
+  margin: 0;
+  border: 0;
+  height: 100%;
+  width: 160px;
+}
+
+.navProd {
+  width: 160px;
+  position: relative;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navProd h2 {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+
+.navFav {
+  position: relative;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navFav:focus {
+  background-color: #222;
+}
+
+.navFav h2 {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+
+.nav ul a {
+  font-size: 17px;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  bottom: 0;
+  position: absolute;
+  clear: both;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+.navFooter li {
+  color: #222;
+}
+
+.navFooter ul {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  align-items: center;
+  height: 70px;
+}
+
+.navFooter ul li {
+  padding: 0;
+  height: 70px;
+  align-items: center;
+}
+
+.navFooter ul a {
+  top: 10px;
+  transition: all 0.5s ease;
+}
+
+.navFooter ul a:hover {
+  color: #222222;
+}
+
+.linkedIn svg {
+  padding: 13px;
+  padding-bottom: 20px;
+}
+
+.github svg {
+  padding: 13px;
+  padding-bottom: 22px;
+}
+
+.nav ul li a svg {
+  padding-top: 13px;
+}
+
+.navFooter h2 {
+  line-height: 13px;
+  color: #222;
+}
+
+.navFooter h2:hover {
+  color: #222222;
+}
+
+.navItem {
+  align-items: center;
+}
+
+.navItem:hover {
+  background-color: var(--primary);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.currentLink {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.navMenu {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 1;
+  right: 0;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.home {
+  padding-top: 13px;
+}
+
+.navLinks {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+.navLinks h2 {
+  margin: 0;
+  padding: 27px 0px 27px 0px;
+}
+
+.navLinks:hover {
+  background-color: var(--primary);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.navLinks:focus {
+  background-color: var(--background);
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .home {
+    display: none;
+  }
+
+  .navMenuActive {
+    background: #242222;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 83px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .navLinks {
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+
+  .navLinks h2 {
+    margin-left: 20px;
+  }
+
+  .navProd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navProd:focus {
+    background-color: var(--background);
+  }
+
+  .productos {
+    color: var(--primary);
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .productos:hover {
+    color: #ffff;
+  }
+
+  .productos h2 {
+    font-size: 2.45em;
+  }
+
+  .navLinks:hover {
+    background: var(--background);
+    border-radius: 4px;
+  }
+
+  .nav {
+    position: absolute;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+    align-items: center;
+  }
+
+  .bars {
+    display: flex;
+    color: #fff;
+  }
+
+  .cart {
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    position: relative;
+  }
+
+  .cart:focus {
+    background-color: var(--background);
+  }
+
+  .cart svg {
+    padding-bottom: 0;
+  }
+
+  .cart span {
+    display: contents;
+    position: relative;
+    top: 0;
+    font-size: 1.3em;
+  }
+
+  .nav svg {
+    width: 80px;
+    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav svg:hover {
+    cursor: pointer;
+  }
+
+  .navCart:hover {
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+
+  .bars svg {
+    padding: 0;
+    height: 35px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: var(--primary);
+    border-radius: 4px;
+  }
+
+  .navFav {
+    color: #fff;
+  }
+
+  .navFav h2 {
+    font-size: 2.45em;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .navLinksMobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.45em;
+  }
+
+  .navLinksMobile:hover {
+    background: var(--secondary);
+    transition: 250ms;
+  }
+
+  .navFooter {
+    display: none;
+  }
+
+  .nav h2:hover {
+    color: #ffff;
+  }
+}

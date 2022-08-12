@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vmax;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  width: 100%;
+
+}

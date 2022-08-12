@@ -1,0 +1,40 @@
+input[type="text"] {
+  font: 1.1em "PT Sans Caption";
+  border: 2px solid #188fff;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  background: transparent;
+  // width: 240px;
+}
+
+.buscador,
+input {
+  &:focus {
+    outline: none !important;
+    border: 2px solid #188fff;
+  }
+}
+
+.buscarButton {
+  font-size: 1.1em;
+  margin-left: 5px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #166dbe;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: #188fff;
+  }
+}
+
+.buscarButton:focus {
+  background-color: #166dbe;
+}
+
+.searchDiv {
+  margin-bottom: 20px;
+}

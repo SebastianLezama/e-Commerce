@@ -1,0 +1,87 @@
+.Counter button {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 2px;
+  cursor: pointer;
+  color: #188fff;
+  width: 250px;
+  font-size: 16px;
+  font-family: "PT Sans Caption", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #188fff;
+  border-radius: 3px;
+  background: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5%;
+
+  &:hover {
+    background: #166dbe;
+    color: #222;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5%;
+
+  &:hover {
+    color: #188fff;
+  }
+}
+
+.icon-hover {
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5%;
+  color: #188fff;
+}
+
+.icon-max {
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5%;
+  color: #e61f1f;
+}
+
+.Counter {
+  left: 15%;
+  bottom: 3%;
+  padding: 5px;
+  margin-left: 0%;
+  display: block;
+  align-content: center;
+  display: inline-block;
+  overflow: auto/scroll/hidden;
+  clear: left/right/both;
+}
+
+.Counter div {
+  padding: 5px;
+}
+
+.addFavs {
+  cursor: pointer;
+  margin-top: 5%;
+  &:hover {
+    color: #188fff;
+  }
+}
+
+@media (max-width: 55em) {
+  .icon,
+  .icon-hover,
+  .icon-max {
+    margin-top: 0;
+  }
+}
