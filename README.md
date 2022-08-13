@@ -8,6 +8,14 @@
   <a href="https://github.com/SebastianLezama/e-Commerce/issues/new?template=feature.md&labels=feature">Request feature</a>
 </p>
 
+## Librerías usadas
+
+- [React Router Dom](#react-router-dom)
+- [Spinners](#spinners)
+- [Sass](#sass)
+- [LocalStorage](#LocalStorage)
+- [React Icons](#react-icons)
+
 ## Para empezar
 
 - Copia el repositorio
@@ -28,50 +36,31 @@ npm install
 npm start
 ```
 
-## Librerías usadas
-
-- [React Router Dom](#react-router-dom)
-- [Spinners](#spinners)
-- [Sass](#sass)
-- [LocalStorage](#LocalStorage)
-- [React Icons](#react-icons)
-
-## Estructura del Proyecto
-
-```text
-src/
-├── components/
-│    ├── Cart/
-│    ├── Counter/
-│    ├── Layout/
-│    ├── Main/
-│    │   ├── index.jsx
-│    │   └── index.scss
-│    ├── NavBar/
-│    └── Productos/
-├── context/
-├── utils/
-├── App.css
-├── App.jsx
-├── index.css
-├── index.js
-└── reportWebVitals.js
-```
-
 ## Bugs y feature requests
 
 Si tienes algún bug o una feature request, por favor abre un nuevo [issue](https://github.com/SebastianLezama/e-Commerce/issues/new).
 
 ## React Router Dom
 
+Creando rutas para navegar por la página de manera declarativa.
+Info sobre React Router [aquí](https://reactrouter.com/).
+
 ## Spinners
+
+Loaders para transiciones de páginas o para esperar por alguna promesa.
 
 ## Sass
 
+Syntactically Awesome Style Sheets, usado para hacer nesting de estilos y facilitar el desarrollo. Info sobre sass [aquí](https://sass-lang.com/).
+
 ## LocalStorage
+
+API de almacenamiento web que nos permite almacenar datos de manera local en el browser y sin necesidad de realizar alguna conexión a una base de datos.
 
 ## React Icons
 
+Librería de íconos usando el import del ES6. Más info [aquí](https://react-icons.github.io/react-icons/).
+
 ## Creador
 
-**Sebastian Lezama**
+`Sebastian Lezama`
