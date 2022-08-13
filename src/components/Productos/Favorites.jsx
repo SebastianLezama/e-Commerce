@@ -16,7 +16,7 @@ const Favorites = () => {
               <h2>No hay productos guardados!</h2>
               <Link to="/productos">
                 <button className="buscarButton">Ver productos</button>
-              </Link>{" "}
+              </Link>
             </>
           ) : (
             <>

@@ -18,7 +18,7 @@ const CardList = ({ items, notInCart, onMain, onProd }) => {
   const data = filteredItems.sort((a, b) => (a.name > b.name ? 1 : -1));
 
   return (
-    <div className={s.CardList}>
+    <div className={onMain ? s.CardListMain : s.CardList}>
       {data.map((prod) => (
         <Card
           prod={prod}

@@ -3,6 +3,7 @@ import "./Cart.scss";
 import { CartContext } from "../../context/CartContext";
 import CartDetail from "./CartDetail";
 import Form from "./Form";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, total, clearCart } = useContext(CartContext);
@@ -20,7 +21,14 @@ const Cart = () => {
 
   const Carrito = () => {
     if (cart.length === 0) {
-      return <h2>No hay productos en tu carrito!</h2>;
+      return (
+        <>
+          <h2>No hay productos en tu carrito!</h2>
+          <Link to="/productos">
+            <button className="buscarButton">Ver productos</button>
+          </Link>
+        </>
+      );
     } else {
       return (
         <>
