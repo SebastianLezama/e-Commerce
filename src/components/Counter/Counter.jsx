@@ -52,13 +52,13 @@ const Counter = ({ item }) => {
 
   const Favoritos = ({ item }) => {
     return isInFavs(item.id) ? (
-      <div className="addFavs" onClick={() => removeFromFavs(item.id)}>
+      <button className="addFavs" onClick={() => removeFromFavs(item.id)}>
         Quitar de Favoritos
-      </div>
+      </button>
     ) : (
-      <div className="addFavs" onClick={() => addToFavs(item)}>
+      <button className="addFavs" onClick={() => addToFavs(item)}>
         Agregar a Favoritos
-      </div>
+      </button>
     );
   };
 
@@ -73,10 +73,12 @@ const Counter = ({ item }) => {
       <BsCartPlus size="33" className={iconClassPlus} onClick={plusOnClick} />
       <div>Stock Disponible: {currentStock}</div>
       <div>Cantidad: {count}</div>
-      <Favoritos item={item}></Favoritos>
-      <button onClick={() => handleClick()}>
-        {isInCart(item.id) ? "Sumar Cantidad" : "Añadir al Carrito"}
-      </button>
+      <div className="modalButtons">
+        <Favoritos item={item}></Favoritos>
+        <button className="addToCart" onClick={() => handleClick()}>
+          {isInCart(item.id) ? "Sumar Cantidad" : "Añadir al Carrito"}
+        </button>
+      </div>
     </div>
   );
 };

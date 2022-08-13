@@ -1,4 +1,4 @@
-.Counter button {
+.addToCart {
   margin-right: 5px;
   margin-left: 5px;
   padding: 2px;
@@ -21,6 +21,22 @@
   &:hover {
     background: #166dbe;
     color: #222;
+  }
+}
+
+.addFavs {
+  font-size: 1.1em;
+  margin-top: 5%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #166dbe;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: #188fff;
+    color: white;
   }
 }
 
@@ -59,23 +75,17 @@
   bottom: 3%;
   padding: 5px;
   margin-left: 0%;
-  display: block;
   align-content: center;
-  display: inline-block;
-  overflow: auto/scroll/hidden;
-  clear: left/right/both;
 }
 
 .Counter div {
   padding: 5px;
 }
 
-.addFavs {
-  cursor: pointer;
-  margin-top: 5%;
-  &:hover {
-    color: #188fff;
-  }
+.modalButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 55em) {

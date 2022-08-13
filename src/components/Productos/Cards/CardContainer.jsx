@@ -36,6 +36,7 @@ const CardContainer = () => {
   }, [categoryId]);
 
   const prodCategory = categoryId && categoriesSpanish[category];
+
   return (
     <div className="mainContainer">
       <div className={s.cardContainer}>

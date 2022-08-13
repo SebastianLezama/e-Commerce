@@ -119,6 +119,7 @@
   position: relative;
   padding-bottom: 70px;
   width: 100%;
+  justify-content: unset;
 }
 @media (max-width: 32em) {
   .cardContainer {
