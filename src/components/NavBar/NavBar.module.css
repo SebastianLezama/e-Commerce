@@ -268,7 +268,6 @@
   }
 
   .productos {
-    color: var(--primary);
     align-items: center;
     padding: 1.5rem;
     width: 100%;
@@ -378,7 +377,7 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    background: var(--primary);
+    background: var(--secondary);
     text-decoration: none;
     color: #fff;
     font-size: 2.45em;
