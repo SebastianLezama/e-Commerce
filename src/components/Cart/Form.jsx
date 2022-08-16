@@ -77,7 +77,9 @@ const Form = () => {
               value={formData.phone}
             />
           </li>
-          <input type="submit" className="flat-button" value="COMPRAR" />
+          {cart.length !== 0 && (
+            <input type="submit" className="flat-button" value="COMPRAR" />
+          )}
         </ul>
       </form>
     </div>
