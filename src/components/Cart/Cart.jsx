@@ -41,26 +41,30 @@ const Cart = () => {
 
   return (
     <div className="cartDisplay">
-      <div className="cartContainer">
+      <div
+        className={cart.length === 0 ? "cartContainerEmpty" : "cartContainer"}
+      >
         <Carrito />
       </div>
-      <div className="cartTotalContainer">
-        <Form totalPrice={total} cart={cart} clearCart={clearCart} />
-        <ul>
-          <li key="button">
-            <button className="vaciar" onClick={clearCart}>
-              Vaciar carrito
-            </button>
-          </li>
-          <li key="subtotal" className="subTotalContainer">
-            <Subtotal />
-          </li>
-          <li key="total" className="total">
-            <h2>Total: </h2>
-            <h2>${total}</h2>
-          </li>
-        </ul>
-      </div>
+      {cart.length !== 0 && (
+        <div className="cartTotalContainer">
+          <Form totalPrice={total} cart={cart} clearCart={clearCart} />
+          <ul>
+            <li key="button">
+              <button className="vaciar" onClick={clearCart}>
+                Vaciar carrito
+              </button>
+            </li>
+            <li key="subtotal" className="subTotalContainer">
+              <Subtotal />
+            </li>
+            <li key="total" className="total">
+              <h2>Total: </h2>
+              <h2>${total}</h2>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

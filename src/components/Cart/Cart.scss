@@ -67,6 +67,17 @@
   min-height: 500px;
 }
 
+.cartContainerEmpty {
+  padding: 20px;
+  margin: 40px 25px 90px 25px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+}
+
 .containerCartDetail {
   display: flex;
   background-color: rgba(196, 196, 196, 0.372);
